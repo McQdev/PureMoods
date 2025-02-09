@@ -97,7 +97,7 @@ OCTYPE html>
       <div class="card-header">
                   <h4>1997 Pure Moods Commercial</h4>
       </div>
-    <iframe width="560" height="315" style= "margin-bottom: 15px;" src="https://www.youtube.com/embed/AZJSjrox_2s?si=kSBf4yLy2RYZQHyZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe style="margin-bottom: 15px; max-width: 560px;" max-height:315px;" src="https://www.youtube.com/embed/AZJSjrox_2s?si=kSBf4yLy2RYZQHyZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   <br/>
     <div class="card" id="quiz">
@@ -199,15 +199,16 @@ OCTYPE html>
     </div>
 </div>
     <!-- Result Display -->
+    <div class="result-container">
     <div class="card" id="result">
       <div class="card-header">
                 <h4>Congratulations!</h4>
       </div>
         <h2>You Are: <span id="track-name"></span></h2>
         <p id="track-description"></p>
-        <iframe id="track-video" width="560" height="315" style="display:none;" frameborder="0" allowfullscreen></iframe>
+        <iframe id="track-video" style="margin-bottom: 15px; max-width: 560px;" max-height:315px;" style="display:none;" frameborder="0" allowfullscreen></iframe>
     </div>
-
+    </div>
     <script>
         function calculateResult() {
             let answers = {};
