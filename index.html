@@ -1,26 +1,25 @@
-<!DOCTYPE html>
+OCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="win95.css">
     <title>Pure Moods Personality Quiz</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            /* font-family: Arial, sans-serif;
             background-color: #1a1a1a;
-            color: #fff;
+            color: #fff; */
             text-align: center;
             padding: 20px;
         }
-        .quiz-container {
+        .card {
             max-width: 700px;
             margin: auto;
-            background: #333;
-            padding: 20px;
-            border-radius: 10px;
+            /* padding: 20px; */
         }
         .question {
-            margin: 20px 0;
+            padding: 20px;
             text-align: left;
         }
         .result-container {
@@ -32,31 +31,79 @@
             text-align: center;
         }
         button {
-            background-color: #008CBA;
-            color: white;
-            padding: 10px 15px;
+            padding: 15px;
             border: none;
             cursor: pointer;
             font-size: 16px;
             border-radius: 5px;
-        }
-        button:hover {
-            background-color: #005f73;
-        }
+          }
         iframe {
             margin-top: 15px;
             margin-left: auto;
             margin-right: auto;
+            margin-botttom:15px;
             text-align: center;
         }
+        h4 {
+          padding-left: 20px;
+          padding-top: 2px;
+          padding-bottom: 1px;
+          margin: 0;
+          font-family: "MS Sans Serif", Tahoma, Verdana, Segoe, sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          height: 28px;
+          line-height: 24px;
+        }
+        h1{
+          font-family: "MS Sans Serif", Tahoma, Verdana, Segoe, sans-serif;
+          font-size: 56px;
+          font-weight: 300;
+        }
+        #quiz{
+          padding-bottom:15px;
+        }
+        input[type="radio"] {
+          margin: 0px;
+            vertical-align: middle;
+            margin-bottom: 3px;
+            margin-right: 5px;
+            height: 20px;
+            width:20px;
+            /* top: 3px; */
+            padding-right: 2px;
+            border: 2px inset #d5d5d5;
+            background: white;
+            box-shadow: -1px -1px 0 0
+              #828282,
+              inset 0 0 0 4px #fff;
+            border-radius: 50%;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            &:checked {
+              background: black;}
+            }
+         label {
+           line-height: 35px;
+         }
     </style>
 </head>
-<body>
+<body class="bg-cloud">
 
     <h1>Which <i>Pure Moods</i> Track Are You?</h1>
-    <iframe width="560" height="315" style= "margin-bottom: 25px;" src="https://www.youtube.com/embed/AZJSjrox_2s?si=kSBf4yLy2RYZQHyZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <div class="quiz-container" id="quiz">
-
+  </div>
+    <!-- Questions -->
+    <div class="card">
+      <div class="card-header">
+                  <h4>1997 Pure Moods Commercial</h4>
+      </div>
+    <iframe width="560" height="315" style= "margin-bottom: 15px;" src="https://www.youtube.com/embed/AZJSjrox_2s?si=kSBf4yLy2RYZQHyZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <br/>
+    <div class="card" id="quiz">
+      <div class="card-header">
+                <h4>The Quiz</h4>
+      </div>
         <!-- Questions -->
         <div class="question">
 <p><b>1. You’ve just been given a mysterious key. What do you do?</b></p>
@@ -150,7 +197,7 @@
 
         <button onclick="calculateResult()">Get Your Track</button>
     </div>
-
+</div>
     <!-- Result Display -->
     <div class="result-container" id="result">
         <h2>You Are: <span id="track-name"></span></h2>
