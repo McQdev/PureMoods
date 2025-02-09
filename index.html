@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Moods Personality Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 700px;
+            margin: auto;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .question {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .result-container {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #444;
+            border-radius: 10px;
+            text-align: center;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005f73;
+        }
+        iframe {
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Which <i>Pure Moods</i> Track Are You?</h1>
+    <iframe width="560" height="315" style= "margin-bottom: 25px;" src="https://www.youtube.com/embed/AZJSjrox_2s?si=kSBf4yLy2RYZQHyZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="quiz-container" id="quiz">
+
+        <!-- Questions -->
+        <div class="question">
+<p><b>1. You’ve just been given a mysterious key. What do you do?</b></p>
+<label><input type="radio" name="q1" value="A"> Hold it up to the light and whisper, “The prophecy begins.”</label><br>
+<label><input type="radio" name="q1" value="B"> Try it on every door you own. If none work, move on to random doors in town.</label><br>
+<label><input type="radio" name="q1" value="C"> Put it in your junk drawer and forget about it for seven years.</label><br>
+<label><input type="radio" name="q1" value="D"> Take it to an antique shop and ask dramatically, “What can you tell me about this?”</label><br>
+<label><input type="radio" name="q1" value="E"> Use it as a pendant for a necklace. You’re the mysterious key person now.</label><br>
+</div>
+
+<div class="question">
+<p><b>2. What’s your personal theme song during an intense stare out the window?</b></p>
+<label><input type="radio" name="q2" value="A"> Something cinematic that makes you seem deep.</label><br>
+<label><input type="radio" name="q2" value="B"> An electronic beat that feels like it should sync up with passing traffic lights.</label><br>
+<label><input type="radio" name="q2" value="C"> A nostalgic 80s ballad that makes you miss things that never even happened to you.</label><br>
+<label><input type="radio" name="q2" value="D"> A slow, eerie melody that makes people wonder if you’re okay.</label><br>
+<label><input type="radio" name="q2" value="E"> Something from a foreign film that no one else has heard of.</label><br>
+</div>
+
+<div class="question">
+<p><b>3. You wake up in a different decade. What’s the first thing you do?</b></p>
+<label><input type="radio" name="q3" value="A"> Immediately blend in and act like you were always meant to be here.</label><br>
+<label><input type="radio" name="q3" value="B"> Find a way to capitalize on future knowledge—sports bets, stocks, whatever works.</label><br>
+<label><input type="radio" name="q3" value="C"> Look for a record store and check if your favorite albums exist yet.</label><br>
+<label><input type="radio" name="q3" value="D"> Wander the streets at night, letting the neon signs guide you.</label><br>
+<label><input type="radio" name="q3" value="E"> Find the nearest underground scene and become a legend in your own time.</label><br>
+</div>
+
+<div class="question">
+<p><b>4. You get to add one incredibly specific feature to your dream home. What is it?</b></p>
+<label><input type="radio" name="q4" value="A"> A secret door that leads to a candlelit library.</label><br>
+<label><input type="radio" name="q4" value="B"> A room dedicated entirely to synthesizers.</label><br>
+<label><input type="radio" name="q4" value="C"> A cozy nook filled with vintage VHS tapes and board games.</label><br>
+<label><input type="radio" name="q4" value="D"> A fog machine for mood. No explanation needed.</label><br>
+<label><input type="radio" name="q4" value="E"> A rooftop observatory where you can sit and look cryptic.</label><br>
+</div>
+
+<div class="question">
+<p><b>5. You find yourself in a movie-style chase scene. What’s the context?</b></p>
+<label><input type="radio" name="q5" value="A"> You stole a priceless artifact and now must protect it at all costs.</label><br>
+<label><input type="radio" name="q5" value="B"> You hacked into something you weren’t supposed to.</label><br>
+<label><input type="radio" name="q5" value="C"> You just realized you left the oven on and are running home dramatically.</label><br>
+<label><input type="radio" name="q5" value="D"> You took a wrong turn and now you’re wrapped up in some international mystery.</label><br>
+<label><input type="radio" name="q5" value="E"> You’re following a feeling. You don’t know what it means, but you must keep running.</label><br>
+</div>
+
+<div class="question">
+<p><b>6. The universe has given you a sign. What is it?</b></p>
+<label><input type="radio" name="q6" value="A"> An owl appears outside your window at an oddly specific moment.</label><br>
+<label><input type="radio" name="q6" value="B"> Your phone glitches in a way that makes you think someone is watching.</label><br>
+<label><input type="radio" name="q6" value="C"> You keep hearing the same song everywhere you go.</label><br>
+<label><input type="radio" name="q6" value="D"> A book literally falls off a shelf in front of you, and you take it as fate.</label><br>
+<label><input type="radio" name="q6" value="E"> You dream about something, and the next day it happens exactly.</label><br>
+</div>
+
+<div class="question">
+<p><b>7. If you had a personal soundtrack, what would your main instrument be?</b></p>
+<label><input type="radio" name="q7" value="A"> A choir of angelic voices.</label><br>
+<label><input type="radio" name="q7" value="B"> A deep, pulsing synth bass.</label><br>
+<label><input type="radio" name="q7" value="C"> A hauntingly beautiful piano melody.</label><br>
+<label><input type="radio" name="q7" value="D"> A hypnotic, tribal drum beat.</label><br>
+<label><input type="radio" name="q7" value="E"> A string section that makes every moment feel important.</label><br>
+</div>
+
+<div class="question">
+<p><b>8. You find yourself staring at a body of water. What are you thinking about?</b></p>
+<label><input type="radio" name="q8" value="A"> The mysteries of time and space.</label><br>
+<label><input type="radio" name="q8" value="B"> How cool it would be to be a futuristic submarine pilot.</label><br>
+<label><input type="radio" name="q8" value="C"> That one memory from childhood you can’t let go of.</label><br>
+<label><input type="radio" name="q8" value="D"> Whether or not there’s a secret world beneath the surface.</label><br>
+<label><input type="radio" name="q8" value="E"> How much you wish you had a dramatic cloak to billow in the wind right now.</label><br>
+</div>
+
+<div class="question">
+<p><b>9. What’s your ideal way to spend an evening alone?</b></p>
+<label><input type="radio" name="q9" value="A"> Burning incense and listening to an album with no lyrics, only vibes.</label><br>
+<label><input type="radio" name="q9" value="B"> Watching an obscure cyberpunk movie and wondering why you weren’t born in the future.</label><br>
+<label><input type="radio" name="q9" value="C"> Looking through old photo albums and getting emotional over nothing.</label><br>
+<label><input type="radio" name="q9" value="D"> Sitting in a dimly lit room with a drink, contemplating life’s hidden messages.</label><br>
+<label><input type="radio" name="q9" value="E"> Taking a long night drive with the windows down and no destination.</label><br>
+</div>
+
+<div class="question">
+<p><b>10. You’ve become a mysterious legend in your town. What are you known for?</b></p>
+<label><input type="radio" name="q10" value="A"> Speaking in riddles and possibly being immortal.</label><br>
+<label><input type="radio" name="q10" value="B"> Being the person who knows how to fix literally everything.</label><br>
+<label><input type="radio" name="q10" value="C"> Hosting the most impossibly cozy gatherings.</label><br>
+<label><input type="radio" name="q10" value="D"> Vanishing for months at a time and reappearing with cryptic stories.</label><br>
+<label><input type="radio" name="q10" value="E"> Wearing that outfit and making people wonder, “Who are they?”</label><br>
+</div>
+
+        <button onclick="calculateResult()">Get Your Track</button>
+    </div>
+
+    <!-- Result Display -->
+    <div class="result-container" id="result">
+        <h2>You Are: <span id="track-name"></span></h2>
+        <p> primary = <span id="primary_val"></span>, secondary = <span id="secondary_val"></span>,key = primary = <span id="key_val"></span></p>
+        <p id="track-description"></p>
+        <iframe id="track-video" width="560" height="315" style="display:none;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function calculateResult() {
+            let answers = {};
+            let selections = document.querySelectorAll("input[type=radio]:checked");
+
+            if (selections.length < 10) {
+                alert("Please answer all questions before getting your result.");
+                return;
+            }
+
+            selections.forEach(input => {
+                answers[input.value] = (answers[input.value] || 0) + 1;
+            });
+
+            let sorted = Object.entries(answers).sort((a, b) => b[1] - a[1]);
+
+            let primary = sorted[0][0];
+            let secondary;
+
+            if (sorted[0][1] > 6) {
+              secondary = sorted[0][0];
+            } else {
+              secondary = sorted[1][0];
+            }
+
+            let results = {
+                "AA": { name: "Enya – Orinoco Flow", desc: "You exist in a dreamscape of soft-focus serenity.", video: "https://www.youtube.com/embed/LTrk4X9ACtw?" },
+                "AD": { name: "Ennio Morricone – Theme from The Mission", desc: "Your life is an epic tale.", video: "https://www.youtube.com/embed/gonKhSIBP54?si=H9oexV6a0lNEqyGJ" },
+                "AB": { name: "Sacred Spirits – Yeha-Noha", desc: "You wander barefoot through mystical forests.", video: "https://www.youtube.com/embed/CNApcyzaY60?si=nZviyhMEs4OqFo1-" },
+                "AC": { name: "Enigma – Return to Innocence", desc: "You are a time traveler at heart.", video: "https://www.youtube.com/embed/Rk_sAHh9s08" },
+                "DE": { name: "Deep Forest – Sweet Lullaby", desc: "A wandering soul with a passport full of stamps.", video: "https://www.youtube.com/embed/lIF5EEneWEU" },
+                "BB": { name: "Jean-Michel Jarre – Oxygen IV", desc: "Your destiny lies in the stars.", video: "https://www.youtube.com/embed/kSIMVnPA994?si=DPGF2yMZv26YPiJU" },
+                "BC": { name: "DJ Dado – The X-Files Theme", desc: "You *know* something is out there.", video: "https://www.youtube.com/embed/kYwRXqjiAZ8?si=GcSPONTUYR8iYIHl" },
+                "BD": { name: "Jan Hammer – Crockett’s Theme", desc: "You are effortlessly cool.", video: "https://www.youtube.com/embed/_UmOY6ek_Y4" },
+                "BE": { name: "Mike Oldfield – Tubular Bells", desc: "You thrive in the eerie, unsettling, and unexplained.", video: "https://www.youtube.com/embed/Bnb-v9fmmCA?si=xBAHZaC2UfvgpDeS" },
+                "CC": { name: "Mark Isham - My Wife with the Champagne Shoulders", desc: "Your soul is a tragic yet beautiful melody.", video: "https://www.youtube.com/embed/El9JOUgjP5o?si=DXDHQ4jKjSs5_Jlt" },
+                "EE": { name: "Angelo Badalamenti – Theme from Twin Peaks: Fire Walk with me", desc: "You exist in a liminal space between past and present.", video: "https://www.youtube.com/embed/grlkoRazWh4?si=m8wcLrVwZ-G6nPD0" },
+                "CE": { name: "Geoffrey Oryema – Makambo", desc: "You are the human embodiment of an old, well-traveled journal.", video: "https://www.youtube.com/embed/Huw8tu4Q-iI?si=QONSxnB5w0srkyE0" },
+                "DD": { name: "David Byrne – Theme from The Last Emperor", desc: "You probably own at least one kimono.", video: "https://www.youtube.com/embed/fTtCXTry0DU?si=0TOozfwN7nybmP-B" },
+                "AE": { name: "David A. Steward feat. Candy Dulfer – Lily Was Here" , desc: "Your life is an indie film. Nobody knows if it's a comedy or a tragedy.", video: "https://www.youtube.com/embed/ypbjIwbTR8c?si=eQ2z57tTfNGbKSCb" },
+                "CD": { name: "Michael Nyman – The Promise", desc: "you are the last scene of a beautifully bittersweet film", video: "https://www.youtube.com/embed/HRrQckINCJ0?si=ki2-fRFj7teA3bRA" },
+
+            };
+
+            // if (sorted[0][1]>=7) {
+            //   let key = primary + primary;
+            // } else {
+            //   let key = primary + secondary;
+            // }
+
+            let key = primary + secondary;
+            let result = results[key.split('').sort().join('')] || results["AA"];
+
+            document.getElementById("primary_val").textContent = primary;
+            document.getElementById("secondary_val").textContent = secondary;
+            document.getElementById("key_val").textContent = key;
+
+            document.getElementById("track-name").textContent = result.name;
+            document.getElementById("track-description").textContent = result.desc;
+            document.getElementById("track-video").src = result.video;
+            document.getElementById("track-video").style.display = "block";
+
+            document.getElementById("result").style.display = "block";
+          }
+    </script>
+
+</body>
+</html>
